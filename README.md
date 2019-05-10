@@ -5,7 +5,7 @@ Created 2019-05-06
 
 # Application Stack #
 Java w/ Springboot
-Angular
+ReactJS
 MongoDB
 
 # Functionality/Pages #

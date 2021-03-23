@@ -12,7 +12,7 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'player-detail',
+    path: 'player-detail/:id',
     loadChildren: () => import('./player-detail/player-detail.module').then( m => m.PlayerDetailPageModule)
   },
   {
@@ -20,7 +20,7 @@ const routes: Routes = [
     loadChildren: () => import('./player-add/player-add.module').then( m => m.PlayerAddPageModule)
   },
   {
-    path: 'player-edit',
+    path: 'player-edit/:id',
     loadChildren: () => import('./player-edit/player-edit.module').then( m => m.PlayerEditPageModule)
   },
   {

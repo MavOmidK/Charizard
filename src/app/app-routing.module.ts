@@ -11,6 +11,22 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'player-detail',
+    loadChildren: () => import('./player-detail/player-detail.module').then( m => m.PlayerDetailPageModule)
+  },
+  {
+    path: 'player-add',
+    loadChildren: () => import('./player-add/player-add.module').then( m => m.PlayerAddPageModule)
+  },
+  {
+    path: 'player-edit',
+    loadChildren: () => import('./player-edit/player-edit.module').then( m => m.PlayerEditPageModule)
+  },
+  {
+    path: 'player-home',
+    loadChildren: () => import('./player-home/player-home.module').then( m => m.PlayerHomePageModule)
+  },
 ];
 
 @NgModule({

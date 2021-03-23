@@ -13,6 +13,8 @@ import { ScrollingModule } from '@angular/cdk/scrolling';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
@@ -21,6 +23,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     FormsModule,
     ReactiveFormsModule,
     IonicModule.forRoot(),
+    HttpClientModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     DragDropModule,

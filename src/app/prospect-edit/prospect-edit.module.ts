@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { PlayerEditPageRoutingModule } from './player-edit-routing.module';
+import { ProspectEditPageRoutingModule } from './prospect-edit-routing.module';
 
-import { PlayerEditPage } from './player-edit.page';
+import { ProspectEditPage } from './prospect-edit.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    PlayerEditPageRoutingModule
+    ProspectEditPageRoutingModule
   ],
-  declarations: [PlayerEditPage]
+  declarations: [ProspectEditPage]
 })
-export class PlayerEditPageModule {}
+export class ProspectEditPageModule {}

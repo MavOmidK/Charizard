@@ -1,8 +1,12 @@
-1) Get roster from all 33 teams (teams/1-32)
-(GET) https://statsapi.web.nhl.com/api/v1/teams/1?expand=team.roster 
-2) Get all player ids from each team
-3) Get all player id's from NHL entry draft prospects
-GET https://statsapi.web.nhl.com/api/v1/draft/prospects
+Get Players on Specific Team
+https://statsapi.web.nhl.com/api/v1/teams/1?expand=team.roster
 
-Issues - Might not contain all the players? What about players who currently are scratched? 
-Solution - Manually input player ID for players not found 
+Get Specific Player
+https://statsapi.web.nhl.com/api/v1/people/8475848
+
+Get Specific Players Career Stats
+https://statsapi.web.nhl.com/api/v1/people/8475848/stats/?stats=careerRegularSeason
+
+
+Prospect Object in Angular : {ID, FirstName, LastName, Games Played, Games Remaining}
+Player in Database : {ID, NHLID}

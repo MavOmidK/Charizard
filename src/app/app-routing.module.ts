@@ -12,20 +12,20 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'player-detail/:id',
-    loadChildren: () => import('./player-detail/player-detail.module').then( m => m.PlayerDetailPageModule)
+    path: 'prospect-home',
+    loadChildren: () => import('./prospect-home/prospect-home.module').then( m => m.ProspectHomePageModule)
   },
   {
-    path: 'player-add',
-    loadChildren: () => import('./player-add/player-add.module').then( m => m.PlayerAddPageModule)
+    path: 'prospect-add',
+    loadChildren: () => import('./prospect-add/prospect-add.module').then( m => m.ProspectAddPageModule)
   },
   {
-    path: 'player-edit/:id',
-    loadChildren: () => import('./player-edit/player-edit.module').then( m => m.PlayerEditPageModule)
+    path: 'prospect-details/:nhlid',
+    loadChildren: () => import('./prospect-details/prospect-details.module').then( m => m.ProspectDetailsPageModule)
   },
   {
-    path: 'player-home',
-    loadChildren: () => import('./player-home/player-home.module').then( m => m.PlayerHomePageModule)
+    path: 'prospect-edit/:nhlid',
+    loadChildren: () => import('./prospect-edit/prospect-edit.module').then( m => m.ProspectEditPageModule)
   },
 ];
 

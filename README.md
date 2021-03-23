@@ -1,12 +1,21 @@
 # Charizard #
-Ionic Mobile App to be used for the LHL Hockey fantasy hockey community
+Frontend Ionic Mobile App to be used for the LHL Hockey fantasy hockey community
 
 Created 20201-03-22
 
-# Application Stack #
-Angular 
-Angular Material UI
+Angular
 Ionic
+	- So everyone can use the app
+GitHub
+	- Web hook to trigger CI/CD
+Jenkins
+	- Master on Own Computer
+	- Slave on DigitalOcean server
+Heroku backend?
+	- To host the Backend API and the MongoDB
+	- Jenkins slave calls scraper/functionality for filling the DB every day
+Backend
+	- Flask / Python
 
 # Functionality/Pages #
 
@@ -24,3 +33,4 @@ Ionic
 - Shows stats of every teams prospects with Games Played being the most important stat
 - Ranks prospects based off of dobberhockey's prospect/players rankings
 - DM's manager in discord once player has hit 80, 81, and 82 games for Skaters and 39, 40, and 41 games for Goalies
+

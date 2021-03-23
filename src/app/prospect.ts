@@ -1,7 +1,6 @@
 export class Prospect {
   _nhlid: number;
-  prod_firstName: string;
-  prod_lastName: string;
-  prod_gamesPlayed: number;
-  prod_gamesRemaining: number;
+  pros_fullName: string;
+  pros_gamesPlayed: number;
+  pros_gamesRemaining: number;
 }

@@ -60,5 +60,5 @@ export class ApiService {
       tap(_ => console.log(`deleted prospect nhlid=${nhlid}`)),
       catchError(this.handleError<Prospect>(`deleteProspect`))
     );
-    }
+  }
 }

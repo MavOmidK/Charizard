@@ -56,7 +56,9 @@ export class ApiService {
   deleteProspect(nhlid:any):Observable<Prospect> {
     const url = `${apiUrl}/${nhlid}`;
 
-    return this.http.delete<Prospect>(url, httpOptions).pipe()
+    return this.http.delete<Prospect>(url, httpOptions).pipe(
+      tap(_ => console.log(`deleted prospect nhlid=${nhlid}`)),
+      catchError(this.handleError<Prospect>(`deleteProspect`))
+    );
     }
-  }
 }

@@ -1,12 +1,12 @@
 # Charizard #
-Desktop Web App to be used for the LHL Hockey fantasy hockey community
+Ionic Mobile App to be used for the LHL Hockey fantasy hockey community
 
-Created 2019-05-06
+Created 20201-03-22
 
 # Application Stack #
-Java w/ Springboot
-ReactJS
-MongoDB
+Angular 
+Angular Material UI
+Ionic
 
 # Functionality/Pages #
 
@@ -23,4 +23,4 @@ MongoDB
 ## Prospect Tracker ##
 - Shows stats of every teams prospects with Games Played being the most important stat
 - Ranks prospects based off of dobberhockey's prospect/players rankings
-- DM's manager in Slack once player has hit 80, 81, and 82 games for Skaters and 39, 40, and 41 gmaes for Goalies
+- DM's manager in discord once player has hit 80, 81, and 82 games for Skaters and 39, 40, and 41 games for Goalies

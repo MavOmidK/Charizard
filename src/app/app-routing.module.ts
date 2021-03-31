@@ -8,7 +8,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'prospect-home',
     pathMatch: 'full'
   },
   {
@@ -20,12 +20,16 @@ const routes: Routes = [
     loadChildren: () => import('./prospect-add/prospect-add.module').then( m => m.ProspectAddPageModule)
   },
   {
-    path: 'prospect-details/:nhlid',
+    path: 'prospect-details/:id',
     loadChildren: () => import('./prospect-details/prospect-details.module').then( m => m.ProspectDetailsPageModule)
   },
   {
-    path: 'prospect-edit/:nhlid',
+    path: 'prospect-edit/:id',
     loadChildren: () => import('./prospect-edit/prospect-edit.module').then( m => m.ProspectEditPageModule)
+  },
+  {
+    path: 'prospect-add',
+    loadChildren: () => import('./prospect-add/prospect-add.module').then( m => m.ProspectAddPageModule)
   },
 ];
 

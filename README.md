@@ -15,7 +15,7 @@ Heroku backend?
 	- To host the Backend API and the MongoDB
 	- Jenkins slave calls scraper/functionality for filling the DB every day
 Backend
-	- Flask / Python
+	- Node Express Mongoose
 
 # Functionality/Pages #
 
@@ -34,3 +34,11 @@ Backend
 - Ranks prospects based off of dobberhockey's prospect/players rankings
 - DM's manager in discord once player has hit 80, 81, and 82 games for Skaters and 39, 40, and 41 games for Goalies
 
+## DB Collections ##
+- Teams
+  {_id, teamName, ownerName, email}
+- Players
+  {_id, nhlid, teamName, fullName, age, position}
+- Prospects
+  {_id, pros_fullname, pros_gamesPlayed, pros_gamesRemaining}
+  

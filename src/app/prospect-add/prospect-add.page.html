@@ -1,9 +1,40 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>prospect-add</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-app>
+  <ion-header>
+    <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="/prospect-home"></ion-back-button>
+      </ion-buttons>
+      <ion-title>Prospect Add</ion-title>
+    </ion-toolbar>
+  </ion-header>
 
-<ion-content>
-
-</ion-content>
+  <ion-content>
+    <div class="example-container mat-elevation-z8">
+      <div class="example-loading-shade"
+           *ngIf="isLoadingResults">
+        <mat-spinner *ngIf="isLoadingResults"></mat-spinner>
+      </div>
+      <mat-card class="example-card">
+        <form [formGroup]="prospectForm" (ngSubmit)="onFormSubmit()">
+          <mat-form-field class="example-full-width">
+            <input matInput placeholder="Prospect Name" formControlName="pros_fullName"
+                 [errorStateMatcher]="matcher">
+          <mat-error>
+            <span *ngIf="!prospectForm.get('pros_fullName').valid && prospectForm.get('pros_fullName').touched">Can't be empty</span>
+          </mat-error>
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Team Owner" formControlName="pros_owner"
+               [errorStateMatcher]="matcher">
+        <mat-error>
+          <span *ngIf="!prospectForm.get('pros_owner').valid && prospectForm.get('pros_owner').touched">Can't be empty</span>
+        </mat-error>
+      </mat-form-field>
+          <div class="button-row">
+            <button type="submit" [disabled]="!prospectForm.valid" mat-flat-button color="primary"><mat-icon>save</mat-icon></button>
+          </div>
+        </form>
+      </mat-card>
+    </div>
+  </ion-content>
+</ion-app>
